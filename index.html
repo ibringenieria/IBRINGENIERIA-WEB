@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>IBR Ingeniería de Bienes Raíces — Avalúos, Licencias, Obras</title>
-  <meta name="description" content="IBR Ingeniería de Bienes Raíces: Avalúos profesionales, licencias de construcción, diseños, interventoría y consultoría técnica en Ibagué y a nivel nacional." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>IBR Ingeniería de Bienes Raíces – Avalúos, Licencias, Obras</title>
+  <meta name="description" content="Soluciones técnicas y legales para bienes raíces: avalúos y peritajes, licencias y trámites, obras e interventorías, con precisión y confianza. Ibagué – Tolima – Colombia." />
+  <!-- Fuente & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -17,47 +18,25 @@
             brand: {
               red: '#D32F2F',
               yellow: '#F9A825',
-              gray: '#2E2E2E',
               black: '#111111'
             }
-          },
-          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'] }
+          }
         }
       }
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.7); }
+    body{font-family: 'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Apple Color Emoji','Segoe UI Emoji',sans-serif}
+    .glass{background: rgba(255,255,255,.85); backdrop-filter: blur(8px); border:1px solid rgba(0,0,0,.06)}
   </style>
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "IBR Ingeniería de Bienes Raíces",
-    "image": "",
-    "url": "",
-    "telephone": "+57 321 939 7333",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ibagué",
-      "addressRegion": "Tolima",
-      "addressCountry": "CO"
-    },
-    "areaServed": "Colombia",
-    "description": "Avalúos profesionales, licencias de construcción, diseños, interventoría y consultoría técnica."
-  }
-  </script>
 </head>
-<body class="font-sans text-brand-black bg-zinc-50">
-  <!-- Top Bar -->
-  <div class="w-full bg-brand-black text-white text-sm">
-    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-      <p> Gestionamos y ejecutamos profesionalmente todo lo relacionado con tus inmuebles y edificaciones</p>
-      <a href="https://wa.me/573219397333?text=Hola%20IBR%20Ingenier%C3%ADa,%20necesito%20informaci%C3%B3n" class="inline-flex items-center gap-2 hover:opacity-90">
-        <span>WhatsApp: 321 939 7333</span>
-      </a>
+<body class="text-brand-black/90">
+
+  <!-- Topbar -->
+  <div class="w-full bg-brand-black text-white text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-1.5 flex items-center justify-between">
+      <span class="truncate">Tu aliado en soluciones técnicas y legales para bienes raíces</span>
+      <span class="hidden sm:block">WhatsApp: 321 939 7333</span>
     </div>
   </div>
 
@@ -66,62 +45,73 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center gap-3">
-         <img src="logo IBR.jpeg" alt="Logo IBR Ingeniería de Bienes Raíces" class="h-12 w-auto" />
-
+          <!-- LOGO -->
+          <img src="logo IBR.jpeg" alt="Logo IBR Ingeniería de Bienes Raíces" class="h-12 w-auto rounded" />
           <div>
             <h1 class="text-lg font-semibold tracking-tight">IBR Ingeniería de Bienes Raíces</h1>
-            <p class="text-xs text-zinc-600 -mt-1">Ibagué — Tolima — Colombia</p>
+            <p class="text-xs text-zinc-600 -mt-1">Ibagué – Tolima — Colombia</p>
           </div>
         </div>
+
+        <!-- NAV -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a class="hover:text-brand-red" href="#servicios">Servicios</a>
-
-</a> 
           <a class="hover:text-brand-red" href="#proyectos">Proyectos</a>
           <a class="hover:text-brand-red" href="#clientes">Clientes</a>
           <a class="hover:text-brand-red" href="#contacto">Contacto</a>
-          <nav class="hidden md:flex items-center gap-6 text-sm">
-  <a class="hover:text-brand-red" href="#servicios">Servicios</a>
-  <a class="hover:text-brand-red" href="#proyectos">Proyectos</a>
-  <a class="hover:text-brand-red" href="#clientes">Clientes</a>
-  <a class="hover:text-brand-red" href="#contacto">Contacto</a>
 
-  <!-- Nuevo botón de Brochure -->
-  <a href="brochure.pdf"
-     class="px-4 py-2 rounded-xl bg-brand-red text-white font-medium hover:brightness-95"
-     target="_blank" rel="noopener">
-     📄 Brochure
-  </a>
+          <!-- Botón Brochure -->
+          <a href="folleto.pdf"
+             class="px-4 py-2 rounded-xl bg-brand-red text-white font-medium hover:brightness-95"
+             target="_blank" rel="noopener">
+            📄 Brochure
+          </a>
 
-  <a href="https://wa.me/573219397333"
-     class="px-4 py-2 rounded-xl bg-brand-red text-white font-medium hover:brightness-95">
-     Hablar por WhatsApp
-  </a>
-</nav>
- 
-        <button class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-zinc-300" aria-label="Abrir menú" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰</button>
+          <!-- Botón WhatsApp -->
+          <a href="https://wa.me/573219397333"
+             class="px-4 py-2 rounded-xl bg-brand-red text-white font-medium hover:brightness-95">
+            Hablar por WhatsApp
+          </a>
+        </nav>
+
+        <!-- Menú móvil (simple) -->
+        <button class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-zinc-300" aria-label="Abrir menú" onclick="document.getElementById('mnav').classList.toggle('hidden')">
+          ☰
+        </button>
       </div>
     </div>
-    <div id="mnav" class="md:hidden hidden border-t border-zinc-200 bg-white">
-      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
-        <a class="hover:text-brand-red" href="#servicios">Servicios</a>
-        <a class="hover:text-brand-red" href="#proyectos">Proyectos</a>
-        <a class="hover:text-brand-red" href="#clientes">Clientes</a>
-        <a class="hover:text-brand-red" href="#contacto">Contacto</a>
-        <a href="https://wa.me/573219397333" class="px-4 py-2 rounded-xl bg-brand-red text-white font-medium text-center">WhatsApp</a>
+
+    <!-- Nav móvil -->
+    <div id="mnav" class="md:hidden hidden border-t border-zinc-200">
+      <div class="max-w-7xl mx-auto px-4 py-2 grid grid-cols-2 gap-3 text-sm">
+        <a class="py-2 hover:text-brand-red" href="#servicios">Servicios</a>
+        <a class="py-2 hover:text-brand-red" href="#proyectos">Proyectos</a>
+        <a class="py-2 hover:text-brand-red" href="#clientes">Clientes</a>
+        <a class="py-2 hover:text-brand-red" href="#contacto">Contacto</a>
+        <a class="px-4 py-2 rounded-xl bg-brand-red text-white text-center font-medium" href="folleto.pdf" target="_blank" rel="noopener">📄 Brochure</a>
+        <a class="px-4 py-2 rounded-xl bg-brand-red text-white text-center font-medium" href="https://wa.me/573219397333">WhatsApp</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-black via-zinc-800 to-brand-red opacity-90"></div>
-    <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1600&auto=format&fit=crop" alt="Ingeniería" class="w-full h-[60vh] object-cover" />
-    <div class="absolute inset-0 flex items-center">
+  <!-- Hero (con espacio extra abajo: pb-32) -->
+  <section id="hero" class="relative pb-32">
+    <!-- Fondo -->
+    <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/10 to-transparent z-10"></div>
+    <img src="https://images.unsplash.com/photo-1581091014534-8987c1d647c5?q=80&w=1600&auto=format&fit=crop" alt="Obras e ingeniería" class="w-full h-[60vh] object-cover" />
+    <!-- Contenido -->
+    <div class="absolute inset-0 flex items-center z-20">
       <div class="max-w-7xl mx-auto px-4 w-full">
         <div class="glass rounded-3xl p-8 md:p-12 max-w-2xl">
-          <h2 class="text-3xl md:text-5xl font-bold leading-tight">Avalúos y peritajes, licencias y tramites judiciales , obras proyectos y mucho mas  con <span class="text-brand-red">precisión</span> y <span class="text-brand-yellow">confianza</span>.</h2>
-          <p class="mt-4 text-zinc-800">  Profesionales en cada rama con años de experiencia en soluciones técnicas y legales para tu inmueble. Atendemos en Ibagué, Tolima y a nivel nacional.</p>
+          <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+            <span class="block">Avalúos y peritajes, licencias y trámites,</span>
+            <span class="block">obras e interventorías, con</span>
+            <span class="text-brand-red">precisión</span> y <span class="text-brand-yellow">confianza</span>.
+          </h2>
+          <p class="mt-4 text-zinc-700">
+            Tu aliado en soluciones técnicas y legales para tu inmueble. Atendemos en Ibagué, Tolima y a nivel nacional.
+          </p>
+
           <div class="mt-6 flex flex-col sm:flex-row gap-3">
             <a href="#contacto" class="px-5 py-3 rounded-xl bg-brand-red text-white font-medium hover:brightness-95">Solicitar cotización</a>
             <a href="#servicios" class="px-5 py-3 rounded-xl border border-brand-black/20 hover:border-brand-red">Ver servicios</a>
@@ -131,59 +121,38 @@
     </div>
   </section>
 
-  <!-- Logos bar (aliados) -->
-  <section class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 sm:grid-cols-4 gap-6 place-items-center">
-      <div class="h-10 w-28 bg-zinc-200 rounded"></div>
-      <div class="h-10 w-28 bg-zinc-200 rounded"></div>
-      <div class="h-10 w-28 bg-zinc-200 rounded"></div>
-      <div class="h-10 w-28 bg-zinc-200 rounded"></div>
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="servicios" class="py-16">
+  <!-- Servicios (con margen superior extra para asegurar separación) -->
+  <section id="servicios" class="py-16 mt-20">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-end justify-between mb-8">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-semibold">Servicios</h3>
-          <p class="text-zinc-600">Brindamos soluciones integrales</p>
-        </div>
-        <a href="#contacto" class="hidden md:inline-block text-sm underline hover:text-brand-red">Solicita asesoría</a>
-      </div>
+      <h3 class="text-2xl md:text-3xl font-semibold">Servicios</h3>
+      <p class="text-zinc-600 mt-2">Soluciones integrales con respaldo técnico y legal.</p>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Card 1 -->
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Ejemplos de tarjetas (puedes editar textos libremente) -->
         <div class="bg-white rounded-2xl shadow p-6 border border-zinc-100">
-          <div class="h-10 w-10 rounded-xl bg-brand-red/10 text-brand-red grid place-items-center font-bold">A</div>
-          <h4 class="mt-4 font-semibold text-lg">Avalúos & Peritajes</h4>
-          <p class="mt-2 text-sm text-zinc-600">Urbanos y rurales, avalúos integrales (cultivos, maquinaria, mejoras) y auxiliares de la justicia.</p>
-          <ul class="mt-3 space-y-1 text-sm">
-            <li>— Métodos comparativos y de costo</li>
-            <li>— Informes en 48–72 h (según alcance)</li>
-            <li>— Cumplimiento Ley 1673/2013</li>
+          <h4 class="font-semibold text-lg">Avalúos & Peritajes</h4>
+          <ul class="mt-3 space-y-1 text-sm text-zinc-700">
+            <li>— Urbanos y rurales</li>
+            <li>— Auxiliar de la justicia</li>
+            <li>— Cultivos, maquinaria y mejoras</li>
           </ul>
         </div>
-        <!-- Card 2 -->
+
         <div class="bg-white rounded-2xl shadow p-6 border border-zinc-100">
-          <div class="h-10 w-10 rounded-xl bg-brand-yellow/10 text-brand-yellow grid place-items-center font-bold">L</div>
-          <h4 class="mt-4 font-semibold text-lg">Licencias & Trámites</h4>
-          <p class="mt-2 text-sm text-zinc-600">Curadurías, Notarías, Catastro y Planeación. Subdivisiones, desenglobes y PH.</p>
-          <ul class="mt-3 space-y-1 text-sm">
-            <li>— Planos y memorias NSR-10</li>
-            <li>— Acotaciones y radicación</li>
-            <li>— Acompañamiento integral</li>
+          <h4 class="font-semibold text-lg">Licencias & Trámites</h4>
+          <ul class="mt-3 space-y-1 text-sm text-zinc-700">
+            <li>— Curadurías, notarías y alcaldías</li>
+            <li>— Propiedad Horizontal</li>
+            <li>— Conceptos técnicos y jurídicos</li>
           </ul>
         </div>
-        <!-- Card 3 -->
+
         <div class="bg-white rounded-2xl shadow p-6 border border-zinc-100">
-          <div class="h-10 w-10 rounded-xl bg-zinc-900/10 text-zinc-900 grid place-items-center font-bold">O</div>
-          <h4 class="mt-4 font-semibold text-lg">Obras & Interventoría</h4>
-          <p class="mt-2 text-sm text-zinc-600">Diseño y ejecución de obras civiles, presupuestos, control de calidad y supervisión técnica.</p>
-          <ul class="mt-3 space-y-1 text-sm">
-            <li>— Presupuestos detallados</li>
-            <li>— Cronogramas y avances</li>
-            <li>— Entrega a satisfacción</li>
+          <h4 class="font-semibold text-lg">Obras & Interventoría</h4>
+          <ul class="mt-3 space-y-1 text-sm text-zinc-700">
+            <li>— Diseño y construcción</li>
+            <li>— Supervisión e interventoría</li>
+            <li>— Seguridad y cumplimiento normativo</li>
           </ul>
         </div>
       </div>
@@ -191,28 +160,14 @@
   </section>
 
   <!-- Proyectos -->
-  <section id="proyectos" class="py-16 bg-white">
+  <section id="proyectos" class="py-16 bg-zinc-50">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-end justify-between mb-8">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-semibold">Proyectos</h3>
-          <p class="text-zinc-600">Algunos trabajos recientes</p>
-        </div>
-        <a href="#contacto" class="hidden md:inline-block text-sm underline hover:text-brand-red">Solicita portafolio</a>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <figure class="group overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-100">
-          <img class="w-full h-52 object-cover group-hover:scale-105 transition" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="Edificación" />
-          <figcaption class="p-4 text-sm">Supervisión técnica residencial — Ibagué</figcaption>
-        </figure>
-        <figure class="group overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-100">
-          <img class="w-full h-52 object-cover group-hover:scale-105 transition" src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Planos" />
-          <figcaption class="p-4 text-sm">Diseño estructural y licenciamiento — Tolima</figcaption>
-        </figure>
-        <figure class="group overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-100">
-          <img class="w-full h-52 object-cover group-hover:scale-105 transition" src="https://images.unsplash.com/photo-1613553474171-c0e587770587?q=80&w=1200&auto=format&fit=crop" alt="Rural" />
-          <figcaption class="p-4 text-sm">Avalúo rural integral — Antioquia</figcaption>
-        </figure>
+      <h3 class="text-2xl md:text-3xl font-semibold">Proyectos</h3>
+      <p class="text-zinc-600 mt-2">Algunos trabajos recientes.</p>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="h-40 rounded-xl bg-white border border-zinc-100 shadow-sm"></div>
+        <div class="h-40 rounded-xl bg-white border border-zinc-100 shadow-sm"></div>
+        <div class="h-40 rounded-xl bg-white border border-zinc-100 shadow-sm"></div>
       </div>
     </div>
   </section>
@@ -220,95 +175,47 @@
   <!-- Clientes -->
   <section id="clientes" class="py-16">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-end justify-between mb-8">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-semibold">Clientes & Testimonios</h3>
-          <p class="text-zinc-600">Confianza que construye valor</p>
-        </div>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <blockquote class="bg-white rounded-2xl shadow p-6 border border-zinc-100 text-sm text-zinc-700">“Proceso claro y soporte constante durante la licencia de construcción. Recomendados.”<br><span class="mt-2 block font-medium text-brand-black">— Propietaria, Ibagué</span></blockquote>
-        <blockquote class="bg-white rounded-2xl shadow p-6 border border-zinc-100 text-sm text-zinc-700">“El avalúo fue preciso y oportuno para nuestra negociación.”<br><span class="mt-2 block font-medium text-brand-black">— Inversionista, Tolima</span></blockquote>
-        <blockquote class="bg-white rounded-2xl shadow p-6 border border-zinc-100 text-sm text-zinc-700">“Excelente interventoría: cumplimiento y calidad en obra.”<br><span class="mt-2 block font-medium text-brand-black">— Constructora local</span></blockquote>
+      <h3 class="text-2xl md:text-3xl font-semibold">Clientes</h3>
+      <p class="text-zinc-600 mt-2">Respaldados por la confianza de nuestros usuarios.</p>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="h-20 rounded-xl bg-zinc-100 border border-zinc-200"></div>
+        <div class="h-20 rounded-xl bg-zinc-100 border border-zinc-200"></div>
+        <div class="h-20 rounded-xl bg-zinc-100 border border-zinc-200"></div>
+        <div class="h-20 rounded-xl bg-zinc-100 border border-zinc-200"></div>
       </div>
     </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="py-16 bg-white">
+  <section id="contacto" class="py-16 bg-zinc-50">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-10">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-semibold">Contacto</h3>
-          <p class="mt-2 text-zinc-600">Cuéntanos sobre tu proyecto y te responderemos pronto.</p>
-          <div class="mt-6 space-y-3 text-sm">
-            <p>📞 <a class="underline hover:text-brand-red" href="tel:+573219397333">+57 321 939 7333</a></p>
-            <p>💬 <a class="underline hover:text-brand-red" href="https://wa.me/573219397333">WhatsApp</a></p>
-            <p>✉️ <a class="underline hover:text-brand-red" href="mailto:info@ibringenieria.co">info@ibringenieria.co</a> <span class="text-zinc-500">(ejemplo)</span></p>
-            <p>📍 Ibagué, Tolima — Colombia</p>
-          </div>
-          <div class="mt-8 p-4 rounded-2xl border border-zinc-200 bg-zinc-50 text-xs text-zinc-600">Aviso legal: La información publicada es de carácter informativo y no constituye asesoría profesional. Los tiempos de entrega dependen del alcance contratado.</div>
+      <h3 class="text-2xl md:text-3xl font-semibold">Contacto</h3>
+      <p class="text-zinc-600 mt-2">Escríbenos y te respondemos a la mayor brevedad.</p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="space-y-3 text-sm">
+          <p><strong>WhatsApp: </strong><a class="text-brand-red hover:underline" href="https://wa.me/573219397333">+57 321 939 7333</a></p>
+          <p><strong>Ciudad: </strong>Ibagué — Tolima, Colombia</p>
+          <!-- Botón Brochure alterno -->
+          <p><a href="folleto.pdf" target="_blank" rel="noopener" class="inline-block mt-2 px-4 py-2 rounded-xl bg-brand-red text-white">📄 Ver Brochure</a></p>
         </div>
-        <form class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200 shadow" onsubmit="event.preventDefault(); alert('¡Gracias! Te contactaremos pronto.'); this.reset();">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="text-sm">Nombre</label>
-              <input required type="text" class="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-red" placeholder="Tu nombre" />
-            </div>
-            <div>
-              <label class="text-sm">Correo</label>
-              <input required type="email" class="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-red" placeholder="tunombre@correo.com" />
-            </div>
-            <div class="sm:col-span-2">
-              <label class="text-sm">Teléfono</label>
-              <input type="tel" class="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-red" placeholder="Opcional" />
-            </div>
-            <div class="sm:col-span-2">
-              <label class="text-sm">Mensaje</label>
-              <textarea required rows="4" class="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-red" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-            </div>
-          </div>
-          <button class="mt-4 w-full px-5 py-3 rounded-xl bg-brand-red text-white font-medium hover:brightness-95">Enviar mensaje</button>
-        </form>
+
+        <div class="rounded-2xl border border-zinc-200 p-4">
+          <p class="text-sm text-zinc-600">
+            Si prefieres, escríbenos directamente por WhatsApp y cuéntanos tu caso. Te orientamos sin costo.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-zinc-200">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
-      <div>
-        <div class="flex items-center gap-3">
-          <div class="h-10 w-10 rounded-xl bg-brand-red"></div>
-          <div>
-            <p class="font-semibold">IBR Ingeniería de Bienes Raíces</p>
-            <p class="text-zinc-600 text-xs">NIT 000.000.000-0 · R.U.T. activo</p>
-          </div>
-        </div>
-        <p class="mt-3 text-zinc-600">Soluciones técnicas y legales para tu inmueble.</p>
-      </div>
-      <div>
-        <p class="font-semibold">Servicios</p>
-        <ul class="mt-2 space-y-1 text-zinc-600">
-          <li>Avalúos integrales</li>
-          <li>Licencias y trámites</li>
-          <li>Diseño y obras</li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold">Contacto</p>
-        <ul class="mt-2 space-y-1 text-zinc-600">
-          <li>WhatsApp: 321 939 7333</li>
-          <li>Ibagué, Tolima — Colombia</li>
-          <li>© <span id="y"></span> IBR Ingeniería</li>
-        </ul>
-      </div>
+  <footer class="py-8 border-t border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 text-sm text-zinc-600">
+      <p>© <span id="y"></span> IBR Ingeniería de Bienes Raíces. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <script>
-    // Año actual
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
