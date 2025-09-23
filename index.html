@@ -194,6 +194,307 @@
     </div>
   </section>
 
+  <!-- COTIZACIÓN RÁPIDA IBR INGENIERÍA -->
+<section id="cotizacion-ibr" class="max-w-7xl mx-auto px-4 py-16">
+  <h2 class="text-2xl md:text-3xl font-bold mb-6">Cotización rápida — IBR Ingeniería</h2>
+  <p class="text-sm text-zinc-600 mb-6">Selecciona el servicio y completa los datos. Te contactaremos por WhatsApp.</p>
+
+  <form id="formCotizacionIBR" class="grid gap-4 bg-white border rounded-2xl p-6 shadow-sm">
+    <!-- Datos básicos -->
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <label class="block text-sm font-medium">Nombre completo*</label>
+        <input required name="nombre" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Tu nombre">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">WhatsApp del solicitante*</label>
+        <input required name="whatsappCliente" type="tel" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="+57 3xx xxx xxxx">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Correo (opcional)</label>
+        <input name="email" type="email" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="tucorreo@dominio.com">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Ubicación (ciudad/barrio/vereda)*</label>
+        <input required name="ubicacion" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Ibagué, barrio / Municipio, vereda">
+      </div>
+    </div>
+
+    <!-- Selector de servicio -->
+    <div>
+      <label class="block text-sm font-medium">Servicio*</label>
+      <select required name="servicio" id="servicioSelect" class="mt-1 w-full border rounded-lg px-3 py-2">
+        <option value="">Selecciona…</option>
+        <option value="licencia">Licencia de construcción</option>
+        <option value="tramites">Trámites ante entidades públicas/privadas</option>
+        <option value="disenos">Diseños / Planos (Arq., Estructural, Hidrosanitario, Eléctrico)</option>
+        <option value="obras">Obras civiles / Construcción / Remodelaciones</option>
+        <option value="consultoria">Consultoría técnico-legal</option>
+        <option value="subdivision">Desenglobe / Subdivisión / PH</option>
+        <option value="notariales">Trámites notariales</option>
+      </select>
+    </div>
+
+    <!-- Campos específicos por servicio -->
+
+    <!-- Licencia de construcción -->
+    <fieldset data-service="licencia" class="hidden grid md:grid-cols-2 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Licencia de construcción</legend>
+      <div>
+        <label class="block text-sm font-medium">Tipo de inmueble*</label>
+        <select name="lic_tipoInmueble" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Vivienda unifamiliar</option>
+          <option>Vivienda bifamiliar</option>
+          <option>Multifamiliar</option>
+          <option>Comercial</option>
+          <option>Industrial</option>
+          <option>Dotacional</option>
+          <option>Lote</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Tipo de licencia*</label>
+        <select name="lic_tipo" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Obra nueva</option>
+          <option>Ampliación</option>
+          <option>Modificación</option>
+          <option>Adecuación</option>
+          <option>Demolición</option>
+          <option>Cerramiento</option>
+          <option>Reconocimiento</option>
+          <option>Urbanismo</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Área a licenciar (m²)*</label>
+        <input name="lic_area" type="number" min="1" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Ej: 120">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Régimen</label>
+        <select name="lic_regimen" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>No aplica</option>
+          <option>Propiedad Horizontal (PH)</option>
+          <option>Bifamiliar</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <!-- Trámites ante entidades -->
+    <fieldset data-service="tramites" class="hidden grid md:grid-cols-2 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Trámites ante entidades</legend>
+      <div>
+        <label class="block text-sm font-medium">Entidad*</label>
+        <select name="tra_entidad" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Curaduría</option>
+          <option>Alcaldía / Planeación</option>
+          <option>Supernotariado (SNR) / Notaría</option>
+          <option>Catastro / IGAC</option>
+          <option>Bomberos</option>
+          <option>Empresas de servicios</option>
+          <option>Otra</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Trámite requerido*</label>
+        <input name="tra_tramite" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Ej: Concepto de uso de suelo">
+      </div>
+    </fieldset>
+
+    <!-- Diseños / Planos -->
+    <fieldset data-service="disenos" class="hidden grid md:grid-cols-3 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Diseños / Planos</legend>
+      <div class="md:col-span-1">
+        <label class="block text-sm font-medium">Disciplina*</label>
+        <select name="dis_disciplina" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Arquitectónico</option>
+          <option>Estructural</option>
+          <option>Hidrosanitario</option>
+          <option>Eléctrico</option>
+          <option>Urbanístico</option>
+        </select>
+      </div>
+      <div class="md:col-span-1">
+        <label class="block text-sm font-medium">Tipo de inmueble*</label>
+        <select name="dis_tipoInmueble" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Vivienda</option>
+          <option>Comercial</option>
+          <option>Industrial</option>
+          <option>Dotacional</option>
+          <option>Lote</option>
+        </select>
+      </div>
+      <div class="md:col-span-1">
+        <label class="block text-sm font-medium">Área (m²)*</label>
+        <input name="dis_area" type="number" min="1" class="mt-1 w-full border rounded-lg px-3 py-2">
+      </div>
+    </fieldset>
+
+    <!-- Obras / Remodelaciones -->
+    <fieldset data-service="obras" class="hidden grid md:grid-cols-3 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Obras y remodelaciones</legend>
+      <div>
+        <label class="block text-sm font-medium">Tipo de obra*</label>
+        <select name="obr_tipo" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Construcción</option>
+          <option>Remodelación</option>
+          <option>Reforzamiento</option>
+          <option>Acabados</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Estado actual</label>
+        <select name="obr_estado" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Solo idea</option>
+          <option>Anteproyecto</option>
+          <option>Con planos</option>
+          <option>Con licencia</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Área estimada (m²)</label>
+        <input name="obr_area" type="number" min="1" class="mt-1 w-full border rounded-lg px-3 py-2">
+      </div>
+    </fieldset>
+
+    <!-- Consultoría -->
+    <fieldset data-service="consultoria" class="hidden grid md:grid-cols-2 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Consultoría técnico-legal</legend>
+      <div class="md:col-span-2">
+        <label class="block text-sm font-medium">Tema / necesidad*</label>
+        <input name="con_tema" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Ej: Viabilidad normativa, PH, uso del suelo, etc.">
+      </div>
+    </fieldset>
+
+    <!-- Desenglobe / Subdivisión / PH -->
+    <fieldset data-service="subdivision" class="hidden grid md:grid-cols-3 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Desenglobe / Subdivisión / PH</legend>
+      <div>
+        <label class="block text-sm font-medium">Tipo*</label>
+        <select name="sub_tipo" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Subdivisión de lotes</option>
+          <option>Englobe</option>
+          <option>Propiedad Horizontal (PH)</option>
+          <option>Desenglobe</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">¿Requiere topografía?</label>
+        <select name="sub_topografia" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Por definir</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Área total (m²)</label>
+        <input name="sub_area" type="number" min="1" class="mt-1 w-full border rounded-lg px-3 py-2">
+      </div>
+    </fieldset>
+
+    <!-- Trámites notariales -->
+    <fieldset data-service="notariales" class="hidden grid md:grid-cols-2 gap-4 border rounded-xl p-4">
+      <legend class="text-sm font-semibold px-1">Trámites notariales</legend>
+      <div>
+        <label class="block text-sm font-medium">Tipo de trámite*</label>
+        <select name="not_tipo" class="mt-1 w-full border rounded-lg px-3 py-2">
+          <option>Escrituración</option>
+          <option>Sucesión</option>
+          <option>Hipoteca / levantamiento</option>
+          <option>Patrimonio de familia</option>
+          <option>Reglamento de PH</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Observaciones</label>
+        <input name="not_obs" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Detalles del caso">
+      </div>
+    </fieldset>
+
+    <!-- Descripción general -->
+    <div>
+      <label class="block text-sm font-medium">Descripción adicional</label>
+      <textarea name="descripcion" rows="3" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Cuéntanos detalles, tiempos, documentos disponibles…"></textarea>
+    </div>
+
+    <!-- Botones -->
+    <div class="flex flex-col sm:flex-row gap-3">
+      <button type="submit" class="px-5 py-3 rounded-xl bg-brand-red text-white hover:brightness-95">Enviar por WhatsApp</button>
+      <a href="#contacto" class="px-5 py-3 rounded-xl border">Contactar por otros medios</a>
+    </div>
+  </form>
+</section>
+
+<script>
+  // Mostrar/ocultar fieldsets según servicio
+  const selectServicio = document.getElementById('servicioSelect');
+  const fieldsets = Array.from(document.querySelectorAll('fieldset[data-service]'));
+  function toggleSections() {
+    const value = selectServicio.value;
+    fieldsets.forEach(fs => fs.classList.toggle('hidden', fs.getAttribute('data-service') !== value));
+  }
+  selectServicio.addEventListener('change', toggleSections);
+
+  // Envío a WhatsApp
+  document.getElementById('formCotizacionIBR').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const f = e.target;
+    const s = f.servicio.value;
+
+    const base = [
+      "📝 *Solicitud de cotización — IBR Ingeniería*",
+      `👤 Nombre: ${f.nombre.value.trim()}`,
+      `📱 WhatsApp cliente: ${f.whatsappCliente.value.trim()}`,
+      f.email.value.trim() ? `✉️ Email: ${f.email.value.trim()}` : null,
+      `📍 Ubicación: ${f.ubicacion.value.trim()}`,
+      `🧰 Servicio: ${selectServicio.options[selectServicio.selectedIndex].text}`
+    ];
+
+    // Campos por servicio
+    const porServicio = {
+      licencia: [
+        `🏠 Inmueble: ${f.lic_tipoInmueble.value}`,
+        `🗂️ Licencia: ${f.lic_tipo.value}`,
+        f.lic_area.value ? `📐 Área: ${f.lic_area.value} m²` : null,
+        f.lic_regimen.value && f.lic_regimen.value !== "No aplica" ? `🏷️ Régimen: ${f.lic_regimen.value}` : null
+      ],
+      tramites: [
+        `🏢 Entidad: ${f.tra_entidad.value}`,
+        `📝 Trámite: ${f.tra_tramite.value.trim()}`
+      ],
+      disenos: [
+        `📚 Disciplina: ${f.dis_disciplina.value}`,
+        `🏠 Inmueble: ${f.dis_tipoInmueble.value}`,
+        f.dis_area.value ? `📐 Área: ${f.dis_area.value} m²` : null
+      ],
+      obras: [
+        `🏗️ Tipo de obra: ${f.obr_tipo.value}`,
+        `📌 Estado: ${f.obr_estado.value}`,
+        f.obr_area.value ? `📐 Área: ${f.obr_area.value} m²` : null
+      ],
+      consultoria: [
+        `📎 Tema: ${f.con_tema.value.trim()}`
+      ],
+      subdivision: [
+        `🧩 Tipo: ${f.sub_tipo.value}`,
+        `🗺️ Topografía: ${f.sub_topografia.value}`,
+        f.sub_area.value ? `📐 Área total: ${f.sub_area.value} m²` : null
+      ],
+      notariales: [
+        `📄 Trámite: ${f.not_tipo.value}`,
+        f.not_obs.value.trim() ? `🗒️ Observaciones: ${f.not_obs.value.trim()}` : null
+      ]
+    };
+
+    const extra = f.descripcion.value.trim() ? [`🗒️ Descripción: ${f.descripcion.value.trim()}`] : [];
+    const lineas = base.concat(porServicio[s] || [], extra).filter(Boolean);
+    const texto = encodeURIComponent(lineas.join("\n"));
+    const NUMERO = "573219397333"; // TU número (sin +)
+    window.open(`https://wa.me/${NUMERO}?text=${texto}`, "_blank");
+  });
+</script>
+
+
   <!-- Proyectos (ejemplos) -->
   <section id="proyectos" class="py-16">
     <div class="max-w-7xl mx-auto px-4">
